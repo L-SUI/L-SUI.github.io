@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两数相加</title>
+</head>
+<body>
+    这个不会
+</body>
+<script>
+// 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
+
+// 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
+
+// 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
+
+// 示例：
+
+// 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
+// 输出：7 -> 0 -> 8
+// 原因：342 + 465 = 807
+
+// 来源：力扣（LeetCode）
+// 链接：https://leetcode-cn.com/problems/add-two-numbers
+// 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+ var addTwoNumbers = function(l1, l2) {
+    let result = new ListNode(null);
+    let nextRst = result;
+    // 进位
+    let params = 0 // 传给下一个层级的值
+    let val = 0 // 传给当前层级的值
+    
+    while(l1 != null || l2 != null) {
+        // TODO
+        let x = (l1 != null) ? l1.val : 0;
+        let y = (l2 != null) ? l2.val : 0;
+        
+        val = (x + y + params) % 10;
+        params = Math.floor((x + y + params) / 10);
+       
+        nextRst.next = new ListNode(val) 
+        nextRst = nextRst.next
+        
+        if(l1 != null) l1 = l1.next
+        if(l2 != null) l2 = l2.next        
+    
+    }
+    
+    if(params) {
+       nextRst.next = new ListNode(params)
+    }
+    
+    return result.next
+
+
+};
+// console.log( addTwoNumbers((2 -> 4 -> 3),(5 -> 6 -> 4)) )
+
+// 作者：FlyTree
+// 链接：https://leetcode-cn.com/problems/add-two-numbers/solution/liang-shu-xiang-jia-javascript-jie-fa-by-flytree-2/
+// 来源：力扣（LeetCode）
+// 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+</script>
+</html>
