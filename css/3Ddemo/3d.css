@@ -1,0 +1,13 @@
+#box {
+    transform-style:preserve-3d;
+    /* transform-origin: 40px 400px 0; */
+    /* position: relative; */
+    height: 100%;
+    perspective-origin: 50% 50%;
+}
+.item {
+    width: 80px;
+    height: 800px;
+    position: absolute;
+    overflow: hidden;
+}

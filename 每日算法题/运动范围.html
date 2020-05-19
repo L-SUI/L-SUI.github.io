@@ -21,14 +21,13 @@ var minNumber = function(nums) {
     nums.sort((a,b)=>{
         let x = a+''+b
         let y = b+''+a
-        return x-y
+        if (x<y) return -1
+        if (x>y) return 1
+        return 0
     })
     console.log(nums)
-    let res=''
-    for (let i = 0; i < nums.length; i++) {
-        res+=nums[i]
-    }
-    return res
+    
+    return nums.join('')
 }
 console.log(minNumber([10,100,1001,1,2,200,201]))
 </script>
