@@ -1,0 +1,1 @@
+# 手写一个Function.bind
