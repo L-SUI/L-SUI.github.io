@@ -1,5 +1,3 @@
-#  手写一个JSON.parse和JSOn.stringify
-```javascript
 // JSON.stringify(value[, replacer [, space]])：
 
 //MDN https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON
@@ -8,7 +6,7 @@
 // 不可枚举的属性会被忽略
 // 如果一个对象的属性值通过某种间接的方式指回该对象本身，即循环引用，属性也会被忽略。
 function jsonStringify(obj) {
-    let type = typeof obj;
+    lettype = typeof obj;
     if (type !== "object" || type === null) {
         if (/string|undefined|function/.test(type)) {
             obj = '"' + obj + '"';
@@ -19,7 +17,7 @@ function jsonStringify(obj) {
         arr = (obj && obj.constructor === Array);
         for (let k in obj) {
             let v = obj[k];
-            let type = typeof v;
+            lettype = typeof v;
             if (/string|undefined|function/.test(type)) {
                 v = '"' + v + '"';
             } elseif (type === "object") {
@@ -65,4 +63,3 @@ var jsonStr = '{ "age": 20, "name": "jack" }'
 var json = (new Function('return ' + jsonStr))();
 //状态机版见PDF
 // https://github.com/youngwind/blog/issues/115
-```

@@ -1,5 +1,3 @@
-# 手写防抖(Debouncing)和节流(throttling)
-```javascript
 // 思路：在规定时间内只触发一次
 function throttle(fn, delay) {
   // 利用闭包保存时间
@@ -39,5 +37,3 @@ function fn() {
   console.log("防抖");
 }
 addEventListener("scroll", debounce(fn, 1000));
-
-```

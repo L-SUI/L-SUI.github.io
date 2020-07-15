@@ -1,5 +1,3 @@
-# 手写一个new操作符
-```javascript
 // new操作符做了这些事：
 
 // 它创建了一个全新的对象。
@@ -42,5 +40,3 @@ function A() {}
 var obj = New(A, 1, 2);
 // equals to
 var obj = new A(1, 2);
-
-```

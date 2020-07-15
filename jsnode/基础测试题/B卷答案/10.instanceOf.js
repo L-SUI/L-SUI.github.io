@@ -1,6 +1,3 @@
-# 手写一个instanceOf原理
-
-```javascript
 function instanceOf(left,right) {
 
     let proto = left.__proto__;
@@ -11,4 +8,3 @@ function instanceOf(left,right) {
         proto = proto.__proto__;
     }
 }
-```

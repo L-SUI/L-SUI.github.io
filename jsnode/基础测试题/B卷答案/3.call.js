@@ -1,5 +1,3 @@
-# 手写一个call或apply
-```javascript
 // 思路：将要改变this指向的方法挂到目标this上执行并返回
 Function.prototype.mycall = function(context) {
   if (typeof this !== "function") {
@@ -28,5 +26,3 @@ Function.prototype.myapply = function(context) {
   delete context.fn;
   return result;
 };
-
-```
