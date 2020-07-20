@@ -104,10 +104,11 @@ module.exports = function (config) {
 ```
 
 ## e2e测试
-1. selenium-webdriver
+### selenium-webdriver
 - npm install selenium-webdriver 安装  专属前端的库
 - 安装对应浏览器驱动
 - 复制扔进根目录
+
 ```javascript
 const { Builder, By, Key, until } = require('selenium-webdriver');
 
@@ -122,11 +123,13 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
   }
 })();
 ```
-- 执行 node 文件路径
 
-2. rize
+> 执行 node 文件路径
+
+### rize
 - yarn add --dev puppeteer rize  下载安装
 - npm install --save-dev puppeteer rize 下载安装
+
 ```javascript
 const Rize = require('rize');
 const rize = new Rize();
@@ -139,7 +142,7 @@ rize
   .assertSee('Node.jsxxx')
   .end(); // 别忘了调用 `end` 方法来退出浏览器！
 ```
-- 执行 node 文件路径
+> 执行 node+ 文件路径
 
 ## 单元测试
 ### Mocha+chai    &&   jest(做不了异步)
@@ -163,7 +166,7 @@ module.exports = app;
 ```
 ---
 
-- service app.spec.js
+> service app.spec.js
 
 ```javascript
 // const axios = require('axios');
@@ -201,7 +204,8 @@ describe('NodeUii 自动化脚本', function () {
 
 ```
 ---
-- mochaRunner.js
+
+> mochaRunner.js
 
 ```javascript
 
@@ -220,4 +224,4 @@ mocha.run(function () {
 });
 
 ```
-- node mochaRunner.js
+> node mochaRunner.js
