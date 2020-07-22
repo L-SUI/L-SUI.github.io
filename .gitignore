@@ -1,19 +1,3 @@
+node_modules
+.vscode
 .DS_Store
-node_modules/
-/dist/
-/productionTest/
-/production/
-/素材/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.rar
-*.zip
-*.vscode
