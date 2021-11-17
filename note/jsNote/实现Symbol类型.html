@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前言 | Memory space</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="记忆空间">
+    <link rel="preload" href="/assets/css/0.styles.f707576d.css" as="style"><link rel="preload" href="/assets/js/app.b20a7b2c.js" as="script"><link rel="preload" href="/assets/js/2.2b5dec35.js" as="script"><link rel="preload" href="/assets/js/50.2d162c33.js" as="script"><link rel="prefetch" href="/assets/js/10.8591bd88.js"><link rel="prefetch" href="/assets/js/11.8a623b33.js"><link rel="prefetch" href="/assets/js/12.ed33f8b1.js"><link rel="prefetch" href="/assets/js/13.cf323ce7.js"><link rel="prefetch" href="/assets/js/14.011a06d3.js"><link rel="prefetch" href="/assets/js/15.6e67cac0.js"><link rel="prefetch" href="/assets/js/16.4b34060b.js"><link rel="prefetch" href="/assets/js/17.39879dbb.js"><link rel="prefetch" href="/assets/js/18.73ca0e5f.js"><link rel="prefetch" href="/assets/js/19.e06cccdc.js"><link rel="prefetch" href="/assets/js/20.b2173c43.js"><link rel="prefetch" href="/assets/js/21.b30d0fae.js"><link rel="prefetch" href="/assets/js/22.edee3873.js"><link rel="prefetch" href="/assets/js/23.958b0f84.js"><link rel="prefetch" href="/assets/js/24.37ed481e.js"><link rel="prefetch" href="/assets/js/25.c4906516.js"><link rel="prefetch" href="/assets/js/26.7da5d218.js"><link rel="prefetch" href="/assets/js/27.1a184590.js"><link rel="prefetch" href="/assets/js/28.ecfebacd.js"><link rel="prefetch" href="/assets/js/29.3bfb10b9.js"><link rel="prefetch" href="/assets/js/3.30121763.js"><link rel="prefetch" href="/assets/js/30.9d59e8ed.js"><link rel="prefetch" href="/assets/js/31.a20ef406.js"><link rel="prefetch" href="/assets/js/32.d7d25090.js"><link rel="prefetch" href="/assets/js/33.75ad0238.js"><link rel="prefetch" href="/assets/js/34.e2f18e63.js"><link rel="prefetch" href="/assets/js/35.ca9d6c26.js"><link rel="prefetch" href="/assets/js/36.d7f2b018.js"><link rel="prefetch" href="/assets/js/37.b3b44492.js"><link rel="prefetch" href="/assets/js/38.22501884.js"><link rel="prefetch" href="/assets/js/39.06cfc114.js"><link rel="prefetch" href="/assets/js/4.bd0ac780.js"><link rel="prefetch" href="/assets/js/40.ab8fdd0e.js"><link rel="prefetch" href="/assets/js/41.490a147b.js"><link rel="prefetch" href="/assets/js/42.100cf7ed.js"><link rel="prefetch" href="/assets/js/43.4b3162ca.js"><link rel="prefetch" href="/assets/js/44.77debc8c.js"><link rel="prefetch" href="/assets/js/45.60b11a32.js"><link rel="prefetch" href="/assets/js/46.e1661f95.js"><link rel="prefetch" href="/assets/js/47.626f6118.js"><link rel="prefetch" href="/assets/js/48.6f9e0fbf.js"><link rel="prefetch" href="/assets/js/49.195ce751.js"><link rel="prefetch" href="/assets/js/5.b6df23a7.js"><link rel="prefetch" href="/assets/js/51.bec2f321.js"><link rel="prefetch" href="/assets/js/52.906d5373.js"><link rel="prefetch" href="/assets/js/53.1043c84e.js"><link rel="prefetch" href="/assets/js/54.4f21dbce.js"><link rel="prefetch" href="/assets/js/55.9f8623b4.js"><link rel="prefetch" href="/assets/js/56.9a2f1af9.js"><link rel="prefetch" href="/assets/js/57.9f1edd84.js"><link rel="prefetch" href="/assets/js/58.9df23552.js"><link rel="prefetch" href="/assets/js/59.f58613bb.js"><link rel="prefetch" href="/assets/js/6.f61b7bed.js"><link rel="prefetch" href="/assets/js/60.a8a74ea0.js"><link rel="prefetch" href="/assets/js/61.c44c3369.js"><link rel="prefetch" href="/assets/js/62.b90044a5.js"><link rel="prefetch" href="/assets/js/63.10459853.js"><link rel="prefetch" href="/assets/js/64.ca828e16.js"><link rel="prefetch" href="/assets/js/65.aa4cd858.js"><link rel="prefetch" href="/assets/js/66.b1300aea.js"><link rel="prefetch" href="/assets/js/67.a3366a3e.js"><link rel="prefetch" href="/assets/js/68.4c66a6a9.js"><link rel="prefetch" href="/assets/js/69.692d6a9f.js"><link rel="prefetch" href="/assets/js/7.2d4dd5d4.js"><link rel="prefetch" href="/assets/js/70.43c9e1bd.js"><link rel="prefetch" href="/assets/js/71.c00df838.js"><link rel="prefetch" href="/assets/js/72.71f0c32f.js"><link rel="prefetch" href="/assets/js/73.0363e95a.js"><link rel="prefetch" href="/assets/js/74.301d4e6d.js"><link rel="prefetch" href="/assets/js/75.8268f441.js"><link rel="prefetch" href="/assets/js/76.b3b1b27e.js"><link rel="prefetch" href="/assets/js/77.d6c63e2c.js"><link rel="prefetch" href="/assets/js/78.15b73caa.js"><link rel="prefetch" href="/assets/js/79.d3f1aa1a.js"><link rel="prefetch" href="/assets/js/8.c630cf99.js"><link rel="prefetch" href="/assets/js/80.5fb60d39.js"><link rel="prefetch" href="/assets/js/81.b5783143.js"><link rel="prefetch" href="/assets/js/82.872c8ad9.js"><link rel="prefetch" href="/assets/js/83.4ddd6449.js"><link rel="prefetch" href="/assets/js/84.ce69a704.js"><link rel="prefetch" href="/assets/js/85.9b017e61.js"><link rel="prefetch" href="/assets/js/86.f18c270c.js"><link rel="prefetch" href="/assets/js/87.fbef59aa.js"><link rel="prefetch" href="/assets/js/88.39d477eb.js"><link rel="prefetch" href="/assets/js/89.40896d0c.js"><link rel="prefetch" href="/assets/js/9.31ad637d.js"><link rel="prefetch" href="/assets/js/90.ff3789f8.js"><link rel="prefetch" href="/assets/js/91.b0ee9ec7.js"><link rel="prefetch" href="/assets/js/92.0977ba32.js"><link rel="prefetch" href="/assets/js/93.9e7e25c9.js"><link rel="prefetch" href="/assets/js/94.9aca7280.js"><link rel="prefetch" href="/assets/js/95.3e8af7f0.js"><link rel="prefetch" href="/assets/js/96.47233871.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f707576d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Memory space</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/L-SUI/note/tree/master/every" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  每日
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/L-SUI/note/tree/master/LeetCode/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  LeetCode
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友邻" class="dropdown-title"><span class="title">友邻</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://notes.itzkp.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  朱昆鹏
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/L-SUI/note" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/L-SUI/note/tree/master/every" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  每日
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/L-SUI/note/tree/master/LeetCode/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  LeetCode
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友邻" class="dropdown-title"><span class="title">友邻</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://notes.itzkp.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  朱昆鹏
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/L-SUI/note" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>性能优化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>源码解析</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>你不知道的css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>OS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Nginx</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>项目工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常用工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>自动化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>js相关</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/jsNote/函数柯里化curry.html" class="sidebar-link">函数柯里化</a></li><li><a href="/note/jsNote/继承.html" class="sidebar-link">继承</a></li><li><a href="/note/jsNote/使用setTimeout模拟setInterval.html" class="sidebar-link">使用setTimeout模拟setInterval</a></li><li><a href="/note/jsNote/手写防抖和节流.html" class="sidebar-link">手写防抖(Debouncing)和节流(throttling)</a></li><li><a href="/note/jsNote/手写实现拖拽.html" class="sidebar-link">手写实现拖拽</a></li><li><a href="/note/jsNote/手写实现Object.create.html" class="sidebar-link">手写实现Object.create</a></li><li><a href="/note/jsNote/手写一个call或apply.html" class="sidebar-link">手写一个call或apply</a></li><li><a href="/note/jsNote/手写一个Function.bind.html" class="sidebar-link">手写一个Function.bind</a></li><li><a href="/note/jsNote/手写一个instanceOf原理.html" class="sidebar-link">手写一个instanceOf原理</a></li><li><a href="/note/jsNote/手写一个JS深拷贝.html" class="sidebar-link">手写一个JS深拷贝(由浅入深多种解法)</a></li><li><a href="/note/jsNote/手写一个JSON.parse和JSOn.stringify.html" class="sidebar-link">手写一个JSON.parse和JSOn.stringify</a></li><li><a href="/note/jsNote/手写一个map和reduce.html" class="sidebar-link">手写一个map和reduce</a></li><li><a href="/note/jsNote/手写一个new操作符.html" class="sidebar-link">手写一个new操作符</a></li><li><a href="/note/jsNote/LRU缓存算法.html" class="sidebar-link">LRU缓存算法</a></li><li><a href="/note/jsNote/手写Promise.html" class="sidebar-link">手写 Promise</a></li><li><a href="/note/jsNote/set.html" class="sidebar-link">实现ES6 Set</a></li><li><a href="/note/jsNote/random.html" class="sidebar-link">乱序你真的会了吗？</a></li><li><a href="/note/jsNote/原型.html" class="sidebar-link">原型</a></li><li><a href="/note/jsNote/实现Symbol类型.html" class="active sidebar-link">前言</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#回顾" class="sidebar-link">回顾</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#分析" class="sidebar-link">分析</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#第一版" class="sidebar-link">第一版</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#第二版" class="sidebar-link">第二版</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#第三版" class="sidebar-link">第三版</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#第四版" class="sidebar-link">第四版</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#第五版" class="sidebar-link">第五版</a></li><li class="sidebar-sub-header"><a href="/note/jsNote/实现Symbol类型.html#完整实现" class="sidebar-link">完整实现</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>QA相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文章收藏</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>实际上，Symbol 的很多特性都无法模拟实现……所以先让我们回顾下有哪些特性，然后挑点能实现的……当然在看的过程中，你也可以思考这个特性是否能实现，如果可以实现，该如何实现。</p> <h2 id="回顾"><a href="#回顾" class="header-anchor">#</a> 回顾</h2> <p>ES6 引入了一种新的原始数据类型 Symbol，表示独一无二的值。</p> <p><strong>1. Symbol 值通过 Symbol 函数生成，使用 typeof，结果为 &quot;symbol&quot;</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var s = Symbol();
+console.log(typeof s); // &quot;symbol&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>2. Symbol 函数前不能使用 new 命令，否则会报错。这是因为生成的 Symbol 是一个原始类型的值，不是对象。</strong></p> <p><strong>3. instanceof 的结果为 false</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var s = Symbol('foo');
+console.log(s instanceof Symbol); // false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>4. Symbol 函数可以接受一个字符串作为参数，表示对 Symbol 实例的描述，主要是为了在控制台显示，或者转为字符串时，比较容易区分。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var s1 = Symbol('foo');
+console.log(s1); // Symbol(foo)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>5. 如果 Symbol 的参数是一个对象，就会调用该对象的 toString 方法，将其转为字符串，然后才生成一个 Symbol 值。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {
+  toString() {
+    return 'abc';
+  }
+};
+const sym = Symbol(obj);
+console.log(sym); // Symbol(abc)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>6. Symbol 函数的参数只是表示对当前 Symbol 值的描述，相同参数的 Symbol 函数的返回值是不相等的。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 没有参数的情况
+var s1 = Symbol();
+var s2 = Symbol();
+
+console.log(s1 === s2); // false
+
+// 有参数的情况
+var s1 = Symbol('foo');
+var s2 = Symbol('foo');
+
+console.log(s1 === s2); // false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>7. Symbol 值不能与其他类型的值进行运算，会报错。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var sym = Symbol('My symbol');
+
+console.log(&quot;your symbol is &quot; + sym); // TypeError: can't convert symbol to string
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>8. Symbol 值可以显式转为字符串。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var sym = Symbol('My symbol');
+
+console.log(String(sym)); // 'Symbol(My symbol)'
+console.log(sym.toString()); // 'Symbol(My symbol)'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>9. Symbol 值可以作为标识符，用于对象的属性名，可以保证不会出现同名的属性。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var mySymbol = Symbol();
+
+// 第一种写法
+var a = {};
+a[mySymbol] = 'Hello!';
+
+// 第二种写法
+var a = {
+  [mySymbol]: 'Hello!'
+};
+
+// 第三种写法
+var a = {};
+Object.defineProperty(a, mySymbol, { value: 'Hello!' });
+
+// 以上写法都得到同样结果
+console.log(a[mySymbol]); // &quot;Hello!&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p><strong>10. Symbol 作为属性名，该属性不会出现在 for...in、for...of 循环中，也不会被 Object.keys()、Object.getOwnPropertyNames()、JSON.stringify() 返回。但是，它也不是私有属性，有一个 Object.getOwnPropertySymbols 方法，可以获取指定对象的所有 Symbol 属性名。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var obj = {};
+var a = Symbol('a');
+var b = Symbol('b');
+
+obj[a] = 'Hello';
+obj[b] = 'World';
+
+var objectSymbols = Object.getOwnPropertySymbols(obj);
+
+console.log(objectSymbols);
+// [Symbol(a), Symbol(b)]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>11. 如果我们希望使用同一个 Symbol 值，可以使用 Symbol.for。它接受一个字符串作为参数，然后搜索有没有以该参数作为名称的 Symbol 值。如果有，就返回这个 Symbol 值，否则就新建并返回一个以该字符串为名称的 Symbol 值。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var s1 = Symbol.for('foo');
+var s2 = Symbol.for('foo');
+
+console.log(s1 === s2); // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>12. Symbol.keyFor 方法返回一个已登记的 Symbol 类型值的 key。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var s1 = Symbol.for(&quot;foo&quot;);
+console.log(Symbol.keyFor(s1)); // &quot;foo&quot;
+
+var s2 = Symbol(&quot;foo&quot;);
+console.log(Symbol.keyFor(s2) ); // undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="分析"><a href="#分析" class="header-anchor">#</a> 分析</h2> <p>看完以上的特性，你觉得哪些特性是可以模拟实现的呢？</p> <p>如果我们要模拟实现一个 Symbol 的话，基本的思路就是构建一个 Symbol 函数，然后直接返回一个独一无二的值。</p> <p>不过在此之前，我们先看看<a href="http://www.ecma-international.org/ecma-262/6.0/#sec-symbol-description" target="_blank" rel="noopener noreferrer">规范<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>中调用 Symbol 时到底做了哪些工作：</p> <blockquote><p>Symbol ( [ description ] )</p></blockquote> <blockquote><p>When Symbol is called with optional argument description, the following steps are taken:</p></blockquote> <blockquote><ol><li>If NewTarget is not undefined, throw a TypeError exception.</li> <li>If description is undefined, var descString be undefined.</li> <li>Else, var descString be ToString(description).</li> <li>ReturnIfAbrupt(descString).</li> <li>Return a new unique Symbol value whose [[Description]] value is descString.</li></ol></blockquote> <p>当调用 Symbol 的时候，会采用以下步骤：</p> <ol><li>如果使用 new ，就报错</li> <li>如果 description 是 undefined，让 descString 为 undefined</li> <li>否则 让 descString 为 ToString(description)</li> <li>如果报错，就返回</li> <li>返回一个新的唯一的 Symbol 值，它的内部属性 [[Description]] 值为 descString</li></ol> <p>考虑到还需要定义一个 [[Description]] 属性，如果直接返回一个基本类型的值，是无法做到这一点的，所以我们最终还是返回一个对象。</p> <h2 id="第一版"><a href="#第一版" class="header-anchor">#</a> 第一版</h2> <p>参照着规范，其实我们已经可以开始写起来了：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 第一版
+(function() {
+    var root = this;
+
+    var SymbolPolyfill = function Symbol(description) {
+
+        // 实现特性第 2 点：Symbol 函数前不能使用 new 命令
+        if (this instanceof SymbolPolyfill) throw new TypeError('Symbol is not a constructor');
+
+        // 实现特性第 5 点：如果 Symbol 的参数是一个对象，就会调用该对象的 toString 方法，将其转为字符串，然后才生成一个 Symbol 值。
+        var descString = description === undefined ? undefined : String(description)
+
+        var symbol = Object.create(null)
+
+        Object.defineProperties(symbol, {
+            '__Description__': {
+                value: descString,
+                writable: false,
+                enumerable: false,
+                configurable: false
+            }
+        });
+
+        // 实现特性第 6 点，因为调用该方法，返回的是一个新对象，两个对象之间，只要引用不同，就不会相同
+        return symbol;
+    }
+
+    root.SymbolPolyfill = SymbolPolyfill;
+})();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>只是参照着规范，我们已经实现了特性的第 2、5、6 点。</p> <h2 id="第二版"><a href="#第二版" class="header-anchor">#</a> 第二版</h2> <p>我们来看看其他的特性该如何实现：</p> <p><strong>1. 使用 typeof，结果为 &quot;symbol&quot;。</strong></p> <p>利用 ES5，我们并不能修改 typeof 操作符的结果，所以这个无法实现。</p> <p><strong>3. instanceof 的结果为 false</strong></p> <p>因为不是通过 new 的方式实现的，所以 instanceof 的结果自然是 false。</p> <p><strong>4. Symbol 函数可以接受一个字符串作为参数，表示对 Symbol 实例的描述。主要是为了在控制台显示，或者转为字符串时，比较容易区分。</strong></p> <p>当我们打印一个原生 Symbol 值的时候：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>console.log(Symbol('1')); // Symbol(1)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可是我们模拟实现的时候返回的却是一个对象，所以这个也是无法实现的，当然你修改 console.log 这个方法是另讲。</p> <p><strong>8. Symbol 值可以显式转为字符串。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var sym = Symbol('My symbol');
+
+console.log(String(sym)); // 'Symbol(My symbol)'
+console.log(sym.toString()); // 'Symbol(My symbol)'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>当调用 String 方法的时候，如果该对象有 toString 方法，就会调用该 toString 方法，所以我们只要给返回的对象添加一个 toString 方法，即可实现这两个效果。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 第二版
+
+// 前面面代码相同 ……
+
+var symbol = Object.create({
+    toString: function() {
+        return 'Symbol(' + this.__Description__ + ')';
+    },
+});
+
+// 后面代码相同 ……
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="第三版"><a href="#第三版" class="header-anchor">#</a> 第三版</h2> <p><strong>9. Symbol 值可以作为标识符，用于对象的属性名，可以保证不会出现同名的属性。</strong></p> <p>看着好像没什么，这点其实和第 8 点是冲突的，这是因为当我们模拟的所谓 Symbol 值其实是一个有着 toString 方法的 对象，当对象作为对象的属性名的时候，就会进行隐式类型转换，还是会调用我们添加的 toString 方法，对于 Symbol('foo') 和 Symbol('foo')两个 Symbol 值，虽然描述一样，但是因为是两个对象，所以并不相等，但是当作为对象的属性名的时候，都会隐式转换为 <code>Symbol(foo)</code> 字符串，这个时候就会造成同名的属性。举个例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = SymbolPolyfill('foo');
+var b = SymbolPolyfill('foo');
+
+console.log(a ===  b); // false
+
+var o = {};
+o[a] = 'hello';
+o[b] = 'hi';
+
+console.log(o); // {Symbol(foo): 'hi'}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>为了防止不会出现同名的属性，毕竟这是一个非常重要的特性，迫不得已，我们需要修改 toString 方法，让它返回一个唯一值，所以第 8 点就无法实现了，而且我们还需要再写一个用来生成 唯一值的方法，就命名为 generateName，我们将该唯一值添加到返回对象的 <strong>Name</strong> 属性中保存下来。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 第三版
+(function() {
+    var root = this;
+
+    var generateName = (function(){
+        var postfix = 0;
+        return function(descString){
+            postfix++;
+            return '@@' + descString + '_' + postfix
+        }
+    })()
+
+    var SymbolPolyfill = function Symbol(description) {
+
+        if (this instanceof SymbolPolyfill) throw new TypeError('Symbol is not a constructor');
+
+        var descString = description === undefined ? undefined : String(description)
+
+        var symbol = Object.create({
+            toString: function() {
+                return this.__Name__;
+            }
+        })
+
+        Object.defineProperties(symbol, {
+            '__Description__': {
+                value: descString,
+                writable: false,
+                enumerable: false,
+                configurable: false
+            },
+            '__Name__': {
+                value: generateName(descString),
+                writable: false,
+                enumerable: false,
+                configurable: false
+            }
+        });
+
+        return symbol;
+    }
+
+
+    root.SymbolPolyfill = SymbolPolyfill;
+
+})()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><p>此时再看下这个例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = SymbolPolyfill('foo');
+var b = SymbolPolyfill('foo');
+
+console.log(a ===  b); // false
+
+var o = {};
+o[a] = 'hello';
+o[b] = 'hi';
+
+console.log(o); // Object { &quot;@@foo_1&quot;: &quot;hello&quot;, &quot;@@foo_2&quot;: &quot;hi&quot; }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="第四版"><a href="#第四版" class="header-anchor">#</a> 第四版</h2> <p>我们再看看接下来的特性。</p> <p>** 7.Symbol 值不能与其他类型的值进行运算，会报错。**</p> <p>以 <code>+</code> 操作符为例，当进行隐式类型转换的时候，会先调用对象的 valueOf 方法，如果没有返回基本值，就会再调用 toString 方法，所以我们考虑在 valueOf 方法中进行报错，比如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var symbol = Object.create({
+    valueOf: function() {
+        throw new Error('Cannot convert a Symbol value')
+    }
+})
+
+console.log('1' + symbol); // 报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>看着很简单的解决了这个问题，可是如果我们是显式调用 valueOf 方法呢？对于一个原生的 Symbol 值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var s1 = Symbol('foo')
+console.log(s1.valueOf()); // Symbol(foo)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>是的，对于原生 Symbol，显式调用 valueOf 方法，会直接返回该 Symbol 值，而我们又无法判断是显式还是隐式的调用，所以这个我们就只能实现一半，要不然实现隐式调用报错，要不然实现显式调用返回该值，那……我们选择不报错的那个吧，即后者。</p> <p>我们迫不得已的修改 valueOf 函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 第四版
+// 前面面代码相同 ……
+
+var symbol = Object.create({
+    toString: function() {
+        return this.__Name__;
+    },
+    valueOf: function() {
+        return this;
+    }
+});
+// 后面代码相同 ……
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="第五版"><a href="#第五版" class="header-anchor">#</a> 第五版</h2> <p><strong>10. Symbol 作为属性名，该属性不会出现在 for...in、for...of 循环中，也不会被 Object.keys()、Object.getOwnPropertyNames()、JSON.stringify() 返回。但是，它也不是私有属性，有一个 Object.getOwnPropertySymbols 方法，可以获取指定对象的所有 Symbol 属性名。</strong></p> <p>嗯，无法实现。</p> <p><strong>11. 有时，我们希望重新使用同一个Symbol值，Symbol.for方法可以做到这一点。它接受一个字符串作为参数，然后搜索有没有以该参数作为名称的Symbol值。如果有，就返回这个Symbol值，否则就新建并返回一个以该字符串为名称的Symbol值。</strong></p> <p>这个实现类似于函数记忆，我们建立一个对象，用来储存已经创建的 Symbol 值即可。</p> <p><strong>12. Symbol.keyFor 方法返回一个已登记的 Symbol 类型值的 key。</strong></p> <p>遍历 forMap,查找该值对应的键值即可。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 第五版
+// 前面代码相同 ……
+var SymbolPolyfill = function() { ... }
+
+var forMap = {};
+
+Object.defineProperties(SymbolPolyfill, {
+    'for': {
+        value: function(description) {
+            var descString = description === undefined ? undefined : String(description)
+            return forMap[descString] ? forMap[descString] : forMap[descString] = SymbolPolyfill(descString);
+        },
+        writable: true,
+        enumerable: false,
+        configurable: true
+    },
+    'keyFor': {
+        value: function(symbol) {
+            for (var key in forMap) {
+                if (forMap[key] === symbol) return key;
+            }
+        },
+        writable: true,
+        enumerable: false,
+        configurable: true
+    }
+});
+// 后面代码相同 ……
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="完整实现"><a href="#完整实现" class="header-anchor">#</a> 完整实现</h2> <p>综上所述：</p> <p>无法实现的特性有：1、4、7、8、10</p> <p>可以实现的特性有：2、3、5、6、9、11、12</p> <p>最后的实现如下:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>(function() {
+    var root = this;
+
+    var generateName = (function(){
+        var postfix = 0;
+        return function(descString){
+            postfix++;
+            return '@@' + descString + '_' + postfix
+        }
+    })()
+
+    var SymbolPolyfill = function Symbol(description) {
+
+        if (this instanceof SymbolPolyfill) throw new TypeError('Symbol is not a constructor');
+
+        var descString = description === undefined ? undefined : String(description)
+
+        var symbol = Object.create({
+            toString: function() {
+                return this.__Name__;
+            },
+            valueOf: function() {
+                return this;
+            }
+        })
+
+        Object.defineProperties(symbol, {
+            '__Description__': {
+                value: descString,
+                writable: false,
+                enumerable: false,
+                configurable: false
+            },
+            '__Name__': {
+                value: generateName(descString),
+                writable: false,
+                enumerable: false,
+                configurable: false
+            }
+        });
+
+        return symbol;
+    }
+
+    var forMap = {};
+
+    Object.defineProperties(SymbolPolyfill, {
+        'for': {
+            value: function(description) {
+                var descString = description === undefined ? undefined : String(description)
+                return forMap[descString] ? forMap[descString] : forMap[descString] = SymbolPolyfill(descString);
+            },
+            writable: true,
+            enumerable: false,
+            configurable: true
+        },
+        'keyFor': {
+            value: function(symbol) {
+                for (var key in forMap) {
+                    if (forMap[key] === symbol) return key;
+                }
+            },
+            writable: true,
+            enumerable: false,
+            configurable: true
+        }
+    });
+
+    root.SymbolPolyfill = SymbolPolyfill;
+
+})()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/L-SUI/note/edit/master/docs/note/jsNote/实现Symbol类型.md" target="_blank" rel="noopener noreferrer">在 Github 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">11/17/2021, 10:18:10 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/jsNote/原型.html" class="prev">
+        原型
+      </a></span> <span class="next"><a href="/note/QA/JavaScript&amp;QA.html">
+        javascript &amp; QA
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.b20a7b2c.js" defer></script><script src="/assets/js/2.2b5dec35.js" defer></script><script src="/assets/js/50.2d162c33.js" defer></script>
+  </body>
+</html>
